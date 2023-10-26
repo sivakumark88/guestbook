@@ -6,9 +6,9 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.comcast.com/xvp/xvp-infra-core.git
-    targetRevision: {{ .Values.targetRevision }}
-    path: infra/gitops/app-of-apps/application
+    repoURL: https://github.com/sivakumark88/guestbook.git
+    targetRevision: HEAD
+    path: apps/guestbook
     helm:
       values: |
         continent: na
