@@ -15,10 +15,7 @@ spec:
           continent: na
           region: us-east-2
         valuesFiles:
-          - $xvp/apps/guestbook/values.yaml
-          - $xvp/apps/guestbook/plat-dev-values.yaml
-          # # - $xvpInfraCore/values.yaml
-          # - values/values.yaml
+          - values.yaml
           # - values/plat-dev-values.yaml
           # - $xvpInfraCore/nfra/gitops/app-guestbook/values/values.yaml
           # - $xvpInfraCore/nfra/gitops/app-guestbook/values/plat-dev-values.yaml
@@ -28,21 +25,9 @@ spec:
     - repoURL: https://github.com/sivakumark88/guestbook.git
       targetRevision: HEAD
       ref: xvp
-  #source:
-   # repoURL: https://github.com/sivakumark88/guestbook.git
-    #targetRevision: HEAD
-    #path: apps/guestbook
-    #helm:
-     # values: |
-      #  continent: na
-       # environment: plat-dev
-        #region: us-east-2
-      #valuesFiles:
-#        - values.yaml
-       # - plat-dev-values.yaml
   destination:
     server: https://kubernetes.default.svc
-    namespace: argocd
+    namespace: guestbook
   syncPolicy:
     automated:
       prune: false
