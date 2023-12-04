@@ -14,7 +14,7 @@ spec:
           environment: plat-dev
           continent: na
           region: us-east-2
-        valuesFiles:
+        valueFiles:
           - values.yaml
           - /argocd-config/kafka-cluster-tf-environment.yaml
           # - values/plat-dev-values.yaml
