@@ -16,6 +16,7 @@ spec:
           region: us-east-2
         valuesFiles:
           - values.yaml
+          - /environment-metadata/kafka-cluster-tf-environment.yaml
           # - values/plat-dev-values.yaml
           # - $xvpInfraCore/nfra/gitops/app-guestbook/values/values.yaml
           # - $xvpInfraCore/nfra/gitops/app-guestbook/values/plat-dev-values.yaml
